@@ -197,6 +197,35 @@
 /* Persona table polish */
 .md-typeset table:not([class]) th { background: var(--bz-ink); color: #fff; }
 
+/* ── Feedback form ─────────────────────────────────────────────────────── */
+.bz-form { display: flex; flex-direction: column; gap: 1rem; max-width: 760px; margin: 1.5rem 0; }
+.bz-form__row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; }
+.bz-form__row:has(> *:nth-child(2):last-child) { grid-template-columns: 1fr 1fr; }
+@media (max-width: 680px) { .bz-form__row { grid-template-columns: 1fr; } }
+.bz-form label { display: flex; flex-direction: column; gap: .35rem; font-size: .8rem; font-weight: 600; color: var(--md-default-fg-color--light); }
+.bz-form input[type="text"],
+.bz-form input[type="email"],
+.bz-form select,
+.bz-form textarea {
+  font: inherit; font-weight: 400; font-size: .85rem;
+  padding: .55rem .7rem; border-radius: 10px;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  background: var(--md-default-bg-color); color: var(--md-default-fg-color);
+}
+.bz-form textarea { resize: vertical; }
+.bz-form input:focus, .bz-form select:focus, .bz-form textarea:focus {
+  outline: none; border-color: var(--bz-orange); box-shadow: 0 0 0 3px rgba(255,90,31,.15);
+}
+.bz-rating { border: 1px solid var(--md-default-fg-color--lighter); border-radius: 10px; padding: .5rem .8rem; }
+.bz-rating legend { font-size: .8rem; font-weight: 600; color: var(--md-default-fg-color--light); padding: 0 .3rem; }
+.bz-rating label { flex-direction: row; align-items: center; gap: .25rem; display: inline-flex; margin-right: .6rem; font-weight: 500; }
+.bz-rating__hint { font-size: .72rem; color: var(--md-default-fg-color--light); font-weight: 400; }
+.bz-form button[type="submit"] { align-self: flex-start; border: 0; cursor: pointer; }
+.bz-form button[disabled] { opacity: .6; cursor: progress; }
+.bz-result { font-size: .85rem; font-weight: 600; margin: .2rem 0 0; min-height: 1.2em; }
+.bz-result--ok { color: #1d9d5a; }
+.bz-result--err { color: #d64545; }
+
 /* Full-bleed bands that break out of Material's content container */
 html { overflow-x: hidden; }
 .bz-bleed { position: relative; left: 50%; right: 50%; width: 100vw; margin-left: -50vw; margin-right: -50vw; }
