@@ -6,7 +6,7 @@ Nutrition tracking that takes seconds, tied to your goal.
 
 The Eat tab shows **today's calories against your target**, how many you have
 remaining, and your macro split — **protein, carbs, fat**. Your target isn't a guess:
-it comes from the [goal](progress.md) you set.
+it comes from your active [goal](progress.md).
 
 ## Log a meal <span class="bz-badge live">Live</span>
 

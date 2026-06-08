@@ -12,8 +12,8 @@ clean, and built around staying consistent.
 
 <div class="bz-feature" markdown>
 ### :material-home: Home
-Your daily snapshot: calories vs target, your **streak**, goal progress and your next
-booked session — with quick actions to log or book.
+Your daily snapshot: calories vs target, your **streak** and goal progress — with
+quick actions to log a meal, browse workouts or book a session.
 </div>
 
 <div class="bz-feature" markdown>
@@ -49,10 +49,12 @@ that keep you going.
 | Sign in; stay signed in across reloads | <span class="bz-badge live">Live</span> |
 | Browse workouts & programs | <span class="bz-badge live">Live</span> |
 | Log meals; daily calorie & macro summary | <span class="bz-badge live">Live</span> |
-| Set a goal with an automatic daily calorie target | <span class="bz-badge live">Live</span> |
+| View your goal & its automatic daily calorie target | <span class="bz-badge live">Live</span> |
 | Record weigh-ins; see your latest weight | <span class="bz-badge live">Live</span> |
 | Consistency streaks | <span class="bz-badge live">Live</span> |
 | Book & cancel trainer sessions | <span class="bz-badge live">Live</span> |
+| Create / edit your goal in-app | <span class="bz-badge beta">Beta</span> |
+| Personal workout playlists | <span class="bz-badge beta">Beta</span> |
 | AI photo calorie estimation | <span class="bz-badge planned">Planned</span> |
 | Wearable sync (steps, heart rate) | <span class="bz-badge planned">Planned</span> |
 

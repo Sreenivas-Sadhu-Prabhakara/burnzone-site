@@ -36,16 +36,23 @@ only what their role and branch allow.
 
 | Capability | Status |
 |---|---|
-| Provision a branded tenant (name, colours, display name) | <span class="bz-badge live">Live</span> |
-| Create & manage branches | <span class="bz-badge live">Live</span> |
-| Invite & manage members and staff, change roles/status | <span class="bz-badge live">Live</span> |
-| Assign trainers & members to branches | <span class="bz-badge live">Live</span> |
-| Trainer availability → bookable slots → bookings | <span class="bz-badge live">Live</span> |
+| Branded tenants (name, colours, logo, display name) | <span class="bz-badge live">Live</span> |
 | Operator dashboard with live KPIs | <span class="bz-badge live">Live</span> |
+| Branches — list & create | <span class="bz-badge live">Live</span> |
+| Live directories — users, bookings, plans, tenants | <span class="bz-badge live">Live</span> |
+| Trainer availability → bookable slots → bookings (full lifecycle) | <span class="bz-badge live">Live</span> |
 | Workout library & curated programs | <span class="bz-badge live">Live</span> |
-| Tiered SaaS plans (Free / Premium / Pro) with limits | <span class="bz-badge live">Live</span> |
+| Tiered SaaS plans (Free / Premium / Pro) with limits & feature flags | <span class="bz-badge live">Live</span> |
+| Management actions in console (invite, roles, assignments, booking actions, provisioning) | <span class="bz-badge beta">Beta</span> |
 | Per-tenant custom domain | <span class="bz-badge beta">Beta</span> |
+| Plan-limit enforcement at creation | <span class="bz-badge beta">Beta</span> |
 | Billing & payment collection | <span class="bz-badge planned">Planned</span> |
+
+!!! note "Read views vs. write actions"
+    The console gives operators **live read visibility** across the gym today
+    (dashboards + directories) plus **branch creation**. The deeper management actions
+    are **built in the API** and are rolling into the console — they're marked
+    <span class="bz-badge beta">Beta</span>, not Live, until their screen ships.
 
 See the full, honest breakdown on **[What's available](../whats-available.md)**.
 

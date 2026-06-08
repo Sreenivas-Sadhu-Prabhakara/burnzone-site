@@ -25,7 +25,8 @@ time.
 
 !!! tip "Coming next"
     Personal playlists — save and sequence your own favourite workouts, with optional
-    trainer review. <span class="bz-badge planned">Planned</span>
+    trainer review. The full create → submit → approve flow is **already built in the
+    API**; the member screen is rolling out. <span class="bz-badge beta">Beta</span>
 
 ---
 

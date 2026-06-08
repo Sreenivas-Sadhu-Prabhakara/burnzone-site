@@ -43,11 +43,16 @@ For chains and franchises.
 
 </div>
 
-## How limits are enforced
+## How limits work
 
-When a tenant approaches a plan limit (e.g. adding the 4th branch on Premium), the
-backend checks usage against the plan and returns a clear, actionable response. Usage
-is visible to Super Admins per tenant.
+Each plan **defines** its limits (branches, trainers, members) and **feature flags**,
+and the backend **computes usage** against them — so a Super Admin can see, per tenant,
+how close it is to each ceiling.
+
+**Hard enforcement at creation** — blocking the 4th branch on a 3-branch plan, for
+example — is being rolled out <span class="bz-badge beta">Beta</span>; today the limits
+are tracked and visible rather than blocking. The plan model is already shaped for
+enforcement, so turning it on is a contained change.
 
 ## Billing <span class="bz-badge planned">Planned</span>
 

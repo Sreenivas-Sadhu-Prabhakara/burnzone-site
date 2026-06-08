@@ -10,7 +10,7 @@ repo_name: burnzone-site
 
 theme:
   name: material
-  custom_dir: docs/overrides
+  custom_dir: overrides
   logo: assets/logo.svg
   favicon: assets/logo.svg
   icon:

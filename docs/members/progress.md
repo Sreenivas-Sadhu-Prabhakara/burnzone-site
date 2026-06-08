@@ -2,11 +2,16 @@
 
 Set a goal, log the work, and watch it add up.
 
-## Set a goal <span class="bz-badge live">Live</span>
+## Your goal drives your day <span class="bz-badge live">Live</span>
 
-Choose a goal — for example **weight loss** — with a target weight and timeframe.
-BurnZone turns that into a **daily calorie target** that drives your [Eat](eat.md)
-summary, so your nutrition and your goal are always in sync.
+Your active goal — for example **weight loss** with a target weight and timeframe —
+becomes a **daily calorie target** that drives your [Eat](eat.md) summary, so your
+nutrition and your goal stay in sync. The app shows your goal, its daily target, and
+your progress from your starting weight toward your target.
+
+> **Setting or editing a goal in-app** is the next surface to land
+> <span class="bz-badge beta">Beta</span> — the goal engine and daily-target
+> calculation are already live in the API.
 
 ## Weigh-ins <span class="bz-badge live">Live</span>
 
