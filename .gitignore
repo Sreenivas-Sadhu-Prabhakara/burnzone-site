@@ -1,0 +1,4 @@
+# MkDocs build output (gh-pages branch holds the published site)
+site/
+.DS_Store
+__pycache__/

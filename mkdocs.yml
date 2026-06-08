@@ -1,0 +1,86 @@
+site_name: BurnZone
+site_description: >-
+  BurnZone — a white-label, multi-tenant gym platform. One backend, two apps:
+  a member experience (Train · Eat · Book · Track) and an operator console
+  (branches, trainers, bookings, plans), branded per gym.
+site_author: BurnZone
+site_url: https://sreenivas-sadhu-prabhakara.github.io/burnzone-site/
+repo_url: https://github.com/Sreenivas-Sadhu-Prabhakara/burnzone-site
+repo_name: burnzone-site
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  icon:
+    repo: fontawesome/brands/github
+  font:
+    text: Inter
+    code: JetBrains Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+    - toc.follow
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Sreenivas-Sadhu-Prabhakara
+  generator: false
+
+nav:
+  - Home: index.md
+  - For Gyms:
+      - gyms/index.md
+      - White-label & multi-tenant: gyms/white-label.md
+      - Operator console: gyms/admin-console.md
+      - Roles & access: gyms/roles-access.md
+      - Plans & pricing: gyms/pricing.md
+  - For Members:
+      - members/index.md
+      - Train: members/train.md
+      - Eat: members/eat.md
+      - Book: members/book.md
+      - Track progress: members/progress.md
+  - How it works: how-it-works.md
+  - What's available: whats-available.md
