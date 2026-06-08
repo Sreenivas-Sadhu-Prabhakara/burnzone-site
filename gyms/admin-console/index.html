@@ -1118,28 +1118,36 @@
 <p>The console is a single web app (Flutter, web-first) where <strong>Super Admins</strong>,
 <strong>Branch Admins</strong> and <strong>Trainers</strong> run the gym. Each role sees a different set of
 sections — the navigation itself is gated.</p>
+<p>Today the console delivers <strong>live operational visibility</strong> plus branch creation. The
+remaining management <em>actions</em> are already built in the API and are landing in the
+console as dedicated screens — marked <span class="bz-badge beta">Beta</span> below.</p>
 <h2 id="dashboard-live">Dashboard <span class="bz-badge live">Live</span></h2>
 <p>A KPI overview computed live from the API: <strong>members, trainers, branches, bookings,
 plans</strong> — and <strong>tenants</strong> for Super Admins — plus a recent-bookings feed with
 colour-coded statuses.</p>
 <h2 id="branches-live">Branches <span class="bz-badge live">Live</span></h2>
-<p>Create and manage branches (name, address). Assign trainers and members to a branch;
-every booking and schedule is branch-scoped. Branch Admins are limited to the
-branches they manage.</p>
+<p><strong>List and create</strong> branches (name, address); every booking and schedule is
+branch-scoped, and Branch Admins are limited to the branches they manage. Assigning
+trainers and members to a branch is supported by the API and surfacing in the console
+next <span class="bz-badge beta">Beta</span>.</p>
 <h2 id="bookings-live">Bookings <span class="bz-badge live">Live</span></h2>
-<p>See the booking pipeline across the gym: who booked which trainer, at which branch,
-and when — with statuses (<code>confirmed</code>, <code>completed</code>, <code>cancelled</code>, <code>no_show</code>). Admins
-can complete, cancel, mark no-shows, or override a booking to a new slot.</p>
+<p>A <strong>live overview</strong> of the booking pipeline across the gym: who booked which trainer,
+at which branch, and when — with colour-coded statuses (<code>confirmed</code>, <code>completed</code>,
+<code>cancelled</code>, <code>no_show</code>). The actions behind those statuses — complete, cancel,
+no-show, override to a new slot — are <strong>live in the API</strong> and being wired into the
+console <span class="bz-badge beta">Beta</span>.</p>
 <h2 id="users-live">Users <span class="bz-badge live">Live</span></h2>
-<p>List everyone in the tenant with their role and status. Invite new staff or members,
-change a user's role, and activate/suspend accounts.</p>
+<p>A <strong>live directory</strong> of everyone in the tenant with their role and status. Inviting
+new staff/members and changing roles or account status are API-backed and rolling into
+the console <span class="bz-badge beta">Beta</span>.</p>
 <h2 id="plans-live">Plans <span class="bz-badge live">Live</span></h2>
-<p>Super Admins manage the SaaS tiers (Free / Premium / Pro) and their per-tenant
-limits — branches, trainers, members — and feature flags. See
-<strong><a href="../pricing/">Plans &amp; pricing</a></strong>.</p>
+<p><strong>View</strong> the SaaS tiers (Free / Premium / Pro), their per-tenant limits — branches,
+trainers, members — and feature flags. In-console editing of plans is next
+<span class="bz-badge beta">Beta</span>. See <strong><a href="../pricing/">Plans &amp; pricing</a></strong>.</p>
 <h2 id="tenants-live">Tenants <span class="bz-badge live">Live</span></h2>
-<p>Super-Admin-only: provision new gyms, set branding, suspend/activate tenants, and
-view per-tenant usage against plan limits.</p>
+<p>Super-Admin-only: a <strong>live list</strong> of provisioned gyms with status. Provisioning new
+gyms, setting branding, and suspending/activating tenants are API-backed and surfacing
+in the console <span class="bz-badge beta">Beta</span>.</p>
 <h2 id="trainer-tools-beta">Trainer tools <span class="bz-badge beta">Beta</span></h2>
 <p>Trainers get their own sections — <strong>My availability</strong> (set recurring hours and
 blocked dates, which generate bookable slots) and <strong>My sessions</strong> (upcoming &amp;

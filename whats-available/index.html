@@ -1022,9 +1022,15 @@
 <h1 id="whats-available">What's available</h1>
 <p>An honest, current snapshot of what BurnZone does today. We'd rather under-promise
 here than oversell.</p>
-<p><span class="bz-badge live">Live</span> works today &nbsp; · &nbsp;
-<span class="bz-badge beta">Beta</span> wired, maturing &nbsp; · &nbsp;
+<p><span class="bz-badge live">Live</span> usable in the product today &nbsp; · &nbsp;
+<span class="bz-badge beta">Beta</span> backend/API built; dedicated screen rolling out &nbsp; · &nbsp;
 <span class="bz-badge planned">Planned</span> on the roadmap</p>
+<div class="admonition note">
+<p class="admonition-title">How we read these badges</p>
+<p>A capability is only <strong>Live</strong> if you can actually <em>use it in an app today</em>. Where
+the backend fully supports something but its dedicated <strong>screen</strong> is still being
+built, we mark it <strong>Beta</strong> — not Live — even though the platform can already do it.</p>
+</div>
 <h2 id="platform-accounts">Platform &amp; accounts</h2>
 <table>
 <thead>
@@ -1059,8 +1065,12 @@ here than oversell.</p>
 <td><span class="bz-badge live">Live</span></td>
 </tr>
 <tr>
+<td>Email notifications on booking confirm / cancel</td>
+<td><span class="bz-badge live">Live</span></td>
+</tr>
+<tr>
 <td>Social / OAuth sign-in (Google, Facebook, Instagram)</td>
-<td><span class="bz-badge beta">Beta</span></td>
+<td><span class="bz-badge planned">Planned</span></td>
 </tr>
 <tr>
 <td>Custom domains per tenant</td>
@@ -1068,6 +1078,10 @@ here than oversell.</p>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>Social sign-in has scaffolded backend endpoints but is <strong>not yet integrated with
+live providers</strong>, and there's no in-app button yet — so we call it Planned.</p>
+</blockquote>
 <h2 id="member-app">Member app</h2>
 <table>
 <thead>
@@ -1078,7 +1092,11 @@ here than oversell.</p>
 </thead>
 <tbody>
 <tr>
-<td>Home dashboard (calories, streak, goal, next session)</td>
+<td>Sign in; stay signed in across reloads &amp; restarts</td>
+<td><span class="bz-badge live">Live</span></td>
+</tr>
+<tr>
+<td>Home dashboard (calories vs target, streak, goal progress)</td>
 <td><span class="bz-badge live">Live</span></td>
 </tr>
 <tr>
@@ -1090,15 +1108,15 @@ here than oversell.</p>
 <td><span class="bz-badge live">Live</span></td>
 </tr>
 <tr>
-<td>Meal logging + daily calorie/macro summary</td>
+<td>Log meals; daily calorie &amp; macro summary</td>
 <td><span class="bz-badge live">Live</span></td>
 </tr>
 <tr>
-<td>Goals with auto daily calorie target</td>
+<td>View your goal &amp; its automatic daily calorie target</td>
 <td><span class="bz-badge live">Live</span></td>
 </tr>
 <tr>
-<td>Weigh-ins &amp; weight history</td>
+<td>Record weigh-ins; see your latest weight</td>
 <td><span class="bz-badge live">Live</span></td>
 </tr>
 <tr>
@@ -1108,6 +1126,10 @@ here than oversell.</p>
 <tr>
 <td>Book &amp; cancel trainer sessions</td>
 <td><span class="bz-badge live">Live</span></td>
+</tr>
+<tr>
+<td>Create / edit a goal in-app</td>
+<td><span class="bz-badge beta">Beta</span></td>
 </tr>
 <tr>
 <td>Personal workout playlists (with review)</td>
@@ -1127,7 +1149,15 @@ here than oversell.</p>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>Goals, playlists and the booking lifecycle are <strong>fully built in the API</strong>; the
+member app reads goals today and the dedicated create/edit and playlist screens are
+the next surfaces to land — hence Beta.</p>
+</blockquote>
 <h2 id="operator-console">Operator console</h2>
+<p>The console gives operators <strong>live operational visibility</strong> across the gym today, plus
+branch creation. Deeper write actions are supported by the API and are landing in the
+console next.</p>
 <table>
 <thead>
 <tr>
@@ -1141,24 +1171,40 @@ here than oversell.</p>
 <td><span class="bz-badge live">Live</span></td>
 </tr>
 <tr>
-<td>Branch management &amp; user/trainer assignment</td>
+<td>Branches — list &amp; create</td>
 <td><span class="bz-badge live">Live</span></td>
 </tr>
 <tr>
-<td>User management (invite, role, status)</td>
+<td>Users — live directory (roles &amp; status)</td>
 <td><span class="bz-badge live">Live</span></td>
 </tr>
 <tr>
-<td>Bookings overview with status actions</td>
+<td>Bookings — live overview with colour-coded statuses</td>
 <td><span class="bz-badge live">Live</span></td>
 </tr>
 <tr>
-<td>SaaS plans &amp; limits</td>
+<td>Plans — view tiers, limits &amp; feature flags</td>
 <td><span class="bz-badge live">Live</span></td>
 </tr>
 <tr>
-<td>Tenant provisioning &amp; suspension (Super Admin)</td>
+<td>Tenants — view provisioned gyms (Super Admin)</td>
 <td><span class="bz-badge live">Live</span></td>
+</tr>
+<tr>
+<td>Booking actions in console (complete / cancel / no-show / override)</td>
+<td><span class="bz-badge beta">Beta</span></td>
+</tr>
+<tr>
+<td>User actions in console (invite, change role / status)</td>
+<td><span class="bz-badge beta">Beta</span></td>
+</tr>
+<tr>
+<td>Branch ↔ user / trainer assignment in console</td>
+<td><span class="bz-badge beta">Beta</span></td>
+</tr>
+<tr>
+<td>Plan &amp; tenant editing in console (provision / suspend)</td>
+<td><span class="bz-badge beta">Beta</span></td>
 </tr>
 <tr>
 <td>Trainer availability &amp; sessions screens</td>
@@ -1166,6 +1212,10 @@ here than oversell.</p>
 </tr>
 <tr>
 <td>Branch calendar view</td>
+<td><span class="bz-badge beta">Beta</span></td>
+</tr>
+<tr>
+<td>Plan-limit enforcement at creation time</td>
 <td><span class="bz-badge beta">Beta</span></td>
 </tr>
 <tr>
@@ -1178,6 +1228,11 @@ here than oversell.</p>
 </tr>
 </tbody>
 </table>
+<blockquote>
+<p>Every Beta row above is <strong>already supported by the backend API</strong> (e.g. completing a
+booking, inviting a user, provisioning a tenant) — what's rolling out is the console
+screen that drives it.</p>
+</blockquote>
 <h2 id="quality-delivery">Quality &amp; delivery</h2>
 <table>
 <thead>
@@ -1188,7 +1243,7 @@ here than oversell.</p>
 </thead>
 <tbody>
 <tr>
-<td>Backend test suite (unit · BDD · white-box · black-box)</td>
+<td>Backend test suites (unit · BDD · white-box · black-box · data-driven)</td>
 <td><span class="bz-badge live">Live</span></td>
 </tr>
 <tr>
@@ -1205,7 +1260,7 @@ here than oversell.</p>
 </tr>
 <tr>
 <td>iOS / Android store packaging</td>
-<td><span class="bz-badge beta">Beta</span></td>
+<td><span class="bz-badge planned">Planned</span></td>
 </tr>
 </tbody>
 </table>

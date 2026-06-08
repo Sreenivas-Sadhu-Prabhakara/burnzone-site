@@ -997,23 +997,7 @@ only what their role and branch allow.</p>
 </thead>
 <tbody>
 <tr>
-<td>Provision a branded tenant (name, colours, display name)</td>
-<td><span class="bz-badge live">Live</span></td>
-</tr>
-<tr>
-<td>Create &amp; manage branches</td>
-<td><span class="bz-badge live">Live</span></td>
-</tr>
-<tr>
-<td>Invite &amp; manage members and staff, change roles/status</td>
-<td><span class="bz-badge live">Live</span></td>
-</tr>
-<tr>
-<td>Assign trainers &amp; members to branches</td>
-<td><span class="bz-badge live">Live</span></td>
-</tr>
-<tr>
-<td>Trainer availability → bookable slots → bookings</td>
+<td>Branded tenants (name, colours, logo, display name)</td>
 <td><span class="bz-badge live">Live</span></td>
 </tr>
 <tr>
@@ -1021,15 +1005,35 @@ only what their role and branch allow.</p>
 <td><span class="bz-badge live">Live</span></td>
 </tr>
 <tr>
+<td>Branches — list &amp; create</td>
+<td><span class="bz-badge live">Live</span></td>
+</tr>
+<tr>
+<td>Live directories — users, bookings, plans, tenants</td>
+<td><span class="bz-badge live">Live</span></td>
+</tr>
+<tr>
+<td>Trainer availability → bookable slots → bookings (full lifecycle)</td>
+<td><span class="bz-badge live">Live</span></td>
+</tr>
+<tr>
 <td>Workout library &amp; curated programs</td>
 <td><span class="bz-badge live">Live</span></td>
 </tr>
 <tr>
-<td>Tiered SaaS plans (Free / Premium / Pro) with limits</td>
+<td>Tiered SaaS plans (Free / Premium / Pro) with limits &amp; feature flags</td>
 <td><span class="bz-badge live">Live</span></td>
 </tr>
 <tr>
+<td>Management actions in console (invite, roles, assignments, booking actions, provisioning)</td>
+<td><span class="bz-badge beta">Beta</span></td>
+</tr>
+<tr>
 <td>Per-tenant custom domain</td>
+<td><span class="bz-badge beta">Beta</span></td>
+</tr>
+<tr>
+<td>Plan-limit enforcement at creation</td>
 <td><span class="bz-badge beta">Beta</span></td>
 </tr>
 <tr>
@@ -1038,6 +1042,13 @@ only what their role and branch allow.</p>
 </tr>
 </tbody>
 </table>
+<div class="admonition note">
+<p class="admonition-title">Read views vs. write actions</p>
+<p>The console gives operators <strong>live read visibility</strong> across the gym today
+(dashboards + directories) plus <strong>branch creation</strong>. The deeper management actions
+are <strong>built in the API</strong> and are rolling into the console — they're marked
+<span class="bz-badge beta">Beta</span>, not Live, until their screen ships.</p>
+</div>
 <p>See the full, honest breakdown on <strong><a href="../whats-available/">What's available</a></strong>.</p>
 <h2 id="explore-the-platform">Explore the platform</h2>
 <ul>

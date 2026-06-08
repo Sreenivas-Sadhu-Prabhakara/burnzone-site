@@ -662,10 +662,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-limits-are-enforced" class="md-nav__link">
+  <a href="#how-limits-work" class="md-nav__link">
     <span class="md-ellipsis">
       
-        How limits are enforced
+        How limits work
       
     </span>
   </a>
@@ -1007,10 +1007,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-limits-are-enforced" class="md-nav__link">
+  <a href="#how-limits-work" class="md-nav__link">
     <span class="md-ellipsis">
       
-        How limits are enforced
+        How limits work
       
     </span>
   </a>
@@ -1090,10 +1090,14 @@ For chains and franchises.</p>
 </ul>
 </div>
 </div>
-<h2 id="how-limits-are-enforced">How limits are enforced</h2>
-<p>When a tenant approaches a plan limit (e.g. adding the 4th branch on Premium), the
-backend checks usage against the plan and returns a clear, actionable response. Usage
-is visible to Super Admins per tenant.</p>
+<h2 id="how-limits-work">How limits work</h2>
+<p>Each plan <strong>defines</strong> its limits (branches, trainers, members) and <strong>feature flags</strong>,
+and the backend <strong>computes usage</strong> against them — so a Super Admin can see, per tenant,
+how close it is to each ceiling.</p>
+<p><strong>Hard enforcement at creation</strong> — blocking the 4th branch on a 3-branch plan, for
+example — is being rolled out <span class="bz-badge beta">Beta</span>; today the limits
+are tracked and visible rather than blocking. The plan model is already shaped for
+enforcement, so turning it on is a contained change.</p>
 <h2 id="billing-planned">Billing <span class="bz-badge planned">Planned</span></h2>
 <p>Plan definitions, limits and per-tenant assignment are live today. <strong>Payment
 collection</strong> (card capture, invoicing, dunning) is on the roadmap — the plan model is
